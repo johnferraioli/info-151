@@ -1,0 +1,16 @@
+/* =============
+  Communication
+============= */
+@use "../helpers";
+
+#communication {
+    background-color: var(--white);
+
+    h1 {
+        color: var(--nightBlue);
+    }
+
+    p {
+        color: var(--grey);
+    }
+}

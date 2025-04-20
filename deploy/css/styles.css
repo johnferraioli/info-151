@@ -457,3 +457,51 @@ textarea {
   background-color: var(--nightBlue);
   color: var(--white);
 }
+
+/* =============
+  Communication
+============= */
+#communication {
+  background-color: var(--white);
+}
+#communication h1 {
+  color: var(--nightBlue);
+}
+#communication p {
+  color: var(--grey);
+}
+
+/* =============
+  Communication
+============= */
+#process {
+  background-color: var(--white);
+}
+#process h1 {
+  color: var(--nightBlue);
+}
+#process p {
+  color: var(--grey);
+}
+#process h4 {
+  color: var(--nightBlue);
+}
+#process ul li {
+  border: 1px solid #F5F5F7;
+}
+
+/* =============
+    About
+============= */
+#about {
+  background-color: var(--white);
+}
+#about h1 {
+  color: var(--nightBlue);
+}
+#about p {
+  color: var(--grey);
+}
+#about h4 {
+  color: var(--nightBlue);
+}

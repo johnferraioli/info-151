@@ -319,7 +319,7 @@ template {
   --ghost: #F0FAFF;
   --lilyWhite:#ECF9FF;
   --snowdrop: #F9FDFF;
-  --Aqua: #00E5CC;
+  --aqua: #00E5CC;
   --nightBlue:#060640;
   --grey: #9090A7;
   --jaguar: #000020;
@@ -395,4 +395,43 @@ textarea {
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
+}
+/* =============
+    Packages
+============= */
+#packages {
+  background-color: var(--lilyWhite);
+}
+#packages h1 {
+  color: var(--nightBlue);
+}
+#packages #package-button-container {
+  background-color: var(--white);
+}
+#packages #package-button-container button {
+  border: none;
+}
+#packages #package-button-container #left-arrow {
+  background-color: var(--white);
+  color: var(--grey);
+}
+#packages #package-button-container #right-arrow {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+#packages #package-card-container .package-card {
+  background-color: var(--ghost);
+  border: 1px solid var(--white);
+}
+#packages #package-card-container .package-card p {
+  color: var(--black);
+}
+#packages #package-card-container .package-card h3 {
+  color: var(--aqua);
+}
+#packages #package-card-container .package-card h4 {
+  color: var(--grey);
+}
+#packages #package-card-container .selected {
+  background-color: var(--white);
 }

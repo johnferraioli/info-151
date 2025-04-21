@@ -5,25 +5,26 @@
 
 #newsletter {
     background-color: var(--lilyWhite);
-    
-    // h1 {
-    //     color: var(--nightBlue);
-    // }
 
     p {
-        color: var(--grey)
+        color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
     }
 
     form {
         input {
             border: none;
-            color: var(--grey)
+            color: var(--grey);
+            font-weight: 600;
         }
 
         button {
             border: none;
             background-color: var(--nightBlue);
-            color: var(--white)
+            color: var(--white);
+            font-size: helpers.rem-calc(14);
+            font-weight: 600;
         }
     }
 }

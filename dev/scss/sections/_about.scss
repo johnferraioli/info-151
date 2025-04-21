@@ -5,16 +5,30 @@
 
 #about {
     background-color: var(--white);
-
-    // h1 {
-    //     color: var(--nightBlue);
-    // }
+    padding: 60px 24px;
 
     p {
         color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+        margin-top: 16px;
     }
 
-    h4 {
-        color: var(--nightBlue)
+    ul {
+        li {
+            margin-top: 16px;
+
+            img {
+                border-radius: 12px;
+            }
+
+            h4 {
+                color: var(--nightBlue);
+                font-weight: 600;
+                line-height: helpers.rem-calc(28);
+                font-size: helpers.rem-calc(20);
+            }
+        }
     }
+
 }

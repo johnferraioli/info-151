@@ -5,12 +5,14 @@
 
 #communication {
     background-color: var(--white);
-
-    // h1 {
-    //     color: var(--nightBlue);
-    // }
+    text-align: center;
+    padding: 107px 24px;
 
     p {
         color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+        margin-top: 24px;
+        margin-bottom: 48px;
     }
 }

@@ -627,23 +627,17 @@ textarea {
 ============= */
 #about {
   background-color: var(--white);
-  padding: 60px 24px;
+  padding: 40px 24px;
 }
-#about p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
-  margin-top: 16px;
+#about section .about-p {
+  margin: 24px 0 40px;
 }
-#about ul li {
-  margin-top: 16px;
-}
-#about ul li img {
-  border-radius: 12px;
-}
-#about ul li h4 {
+#about section ul li h2 {
   color: var(--nightBlue);
-  font-weight: 600;
-  line-height: 1.75rem;
   font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#about aside {
+  margin-top: 68px;
 }

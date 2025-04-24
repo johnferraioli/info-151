@@ -4,44 +4,53 @@
 @use "../helpers";
 
 #newsletter {
-    background-color: var(--lilyWhite);
-    margin: 40px 24px;
-    padding: 60px 16px;
-    border-radius: 8px;
 
-    p {
-        color: var(--grey);
-        font-weight: 600;
-        line-height: helpers.rem-calc(28);
-        margin-top: 16px;
-    }
+    padding: 40px 24px;
 
-    form {
-        margin-top: 16px;
+    #newsletter-content {
+        background-color: var(--lilyWhite);
+        padding: 60px 16px;
+        border-radius: 8px;
 
-        input {
-            border: none;
+        p {
             color: var(--grey);
             font-weight: 600;
-            height: 64px;
-            width: 100%;
-            padding: 0 16px;
-            border-radius: 8px;
-            margin-bottom: 16px;
+            line-height: helpers.rem-calc(28);
+            margin: 16px 0;
         }
 
-        button {
-            border: none;
-            background-color: var(--nightBlue);
-            color: var(--white);
-            font-size: helpers.rem-calc(14);
-            font-weight: 600;
-            width: 150px;
-            height: 60px;
-            border-radius: 6px;
-            display: block;
-            margin-left: auto;
+        form {
+
+            input {
+                border: none;
+                color: var(--grey);
+                font-weight: 600;
+                width: 100%;
+                padding: 24px 8px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 16px;
+            }
+
+            ::placeholder {
+                color: var(--grey);
+                opacity: 1;
+            }
+
+            ::-ms-input-placeholder {
+                color: var(--grey);
+            }
+
+            div {
+                text-align: right;
+            }
+        }
+
+        aside {
+            display: none;
         }
     }
+
+    
 }
   

@@ -373,6 +373,26 @@ a {
   text-decoration: none;
 }
 
+.nightBlue-link {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.nightBlue-btn {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  border: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -415,15 +435,6 @@ textarea {
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-#hero section article a:link, #hero section article a:visited {
-  background-color: var(--nightBlue);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 22px 36px;
-  border-radius: 6px;
-  display: inline-block;
 }
 #hero section article button {
   background-color: var(--white);
@@ -514,41 +525,58 @@ textarea {
     Newsletter
 ============= */
 #newsletter {
+  padding: 40px 24px;
+}
+#newsletter #newsletter-content {
   background-color: var(--lilyWhite);
-  margin: 40px 24px;
   padding: 60px 16px;
   border-radius: 8px;
 }
-#newsletter p {
+#newsletter #newsletter-content p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
-  margin-top: 16px;
+  margin: 16px 0;
 }
-#newsletter form {
-  margin-top: 16px;
-}
-#newsletter form input {
+#newsletter #newsletter-content form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
-  height: 64px;
   width: 100%;
-  padding: 0 16px;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 16px;
 }
-#newsletter form button {
-  border: none;
-  background-color: var(--nightBlue);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
-  width: 150px;
-  height: 60px;
-  border-radius: 6px;
-  display: block;
-  margin-left: auto;
+#newsletter #newsletter-content form ::-webkit-input-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content form ::-moz-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content form :-ms-input-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content form ::-ms-input-placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content form ::placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+#newsletter #newsletter-content form ::-ms-input-placeholder {
+  color: var(--grey);
+}
+#newsletter #newsletter-content form div {
+  text-align: right;
+}
+#newsletter #newsletter-content aside {
+  display: none;
 }
 
 /* =============

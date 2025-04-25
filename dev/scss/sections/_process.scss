@@ -6,29 +6,65 @@
 #process {
     background-color: var(--white);
     padding: 40px 24px;
-    
+
     .works-p {
-        margin: 12px 0 24px;
+        margin: 12px auto 24px;
+        max-width: 431px;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
     }
 
     ul {
-        li {
-            border: 1px solid var(--lilyWhite);
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 24px;
-            background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 100%;
+        margin: 0 auto;
 
-            h2 {
-                font-size: helpers.rem-calc(24);
-                color: var(--nightBlue);
-                font-weight: 600;
-                margin: 40px 0 12px;
-            }
+        @include helpers.md {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "step-1 step-2 step-3";
+        gap: 35px;
+        max-width: 992px;
+        }
+
+        @include helpers.xl {
+        max-width: 1200px;
+        gap: 45px;
+        }
+
+        li {
+        border: 1px solid var(--lilyWhite);
+        padding: 30px;
+        border-radius: 12px;
+        background-color: var(--white);
+        text-align: center;
+
+        margin-bottom: 24px; // **only keep this for flex layout**
+        
+        @include helpers.md {
+            margin-bottom: 0; // **remove margin once grid kicks in**
+        }
+
+        h2 {
+            font-size: helpers.rem-calc(24);
+            color: var(--nightBlue);
+            font-weight: 600;
+            margin: 40px 0 12px;
+        }
         }
 
         #selected {
-            box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.03);
+        box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.03);
         }
+
+        // optional IDs for better grid control if you want
+        #step-1 { grid-area: step-1; }
+        #step-2 { grid-area: step-2; }
+        #step-3 { grid-area: step-3; }
     }
-}
+    }

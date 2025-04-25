@@ -752,13 +752,35 @@ textarea {
 #communication {
   background-color: var(--white);
   text-align: center;
-  padding: 40px 24px;
+  padding: 107px 24px;
 }
 #communication p {
   color: var(--grey);
   font-weight: 600;
   line-height: 28px;
-  margin: 24px 0px 48px;
+  margin: 16px auto 48px;
+  max-width: 764px;
+}
+#communication img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #communication img {
+    max-width: 576px;
+  }
+}
+@media (min-width: 992px) {
+  #communication img {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  #communication img {
+    max-width: 992px;
+  }
 }
 
 /* =============
@@ -769,14 +791,54 @@ textarea {
   padding: 40px 24px;
 }
 #process .works-p {
-  margin: 12px 0 24px;
+  margin: 12px auto 24px;
+  max-width: 431px;
+  text-align: center;
+}
+#process h1 {
+  text-align: center;
+}
+#process ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #process ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 35px 1fr 35px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "step-1 step-2 step-3";
+    gap: 35px;
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #process ul {
+    max-width: 1200px;
+    gap: 45px;
+  }
 }
 #process ul li {
   border: 1px solid var(--lilyWhite);
   padding: 30px;
   border-radius: 12px;
-  margin-bottom: 24px;
   background-color: var(--white);
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #process ul li {
+    margin-bottom: 0;
+  }
 }
 #process ul li h2 {
   font-size: 1.5rem;
@@ -788,6 +850,29 @@ textarea {
   -webkit-box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.03);
           box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.03);
 }
+#process ul #step-1 {
+  grid-area: step-1;
+}
+#process ul #step-2 {
+  grid-area: step-2;
+}
+#process ul #step-3 {
+  grid-area: step-3;
+}
+@media (min-width: 768px) {
+  #process ul #step-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #process ul #step-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #process ul #step-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+}
 
 /* =============
     About
@@ -796,8 +881,50 @@ textarea {
   background-color: var(--white);
   padding: 40px 24px;
 }
+@media (min-width: 768px) {
+  #about {
+    padding: 60px 64px;
+  }
+}
+@media (min-width: 992px) {
+  #about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 456px 64px 1fr;
+    grid-template-columns: 456px 1fr;
+    -webkit-column-gap: 64px;
+       -moz-column-gap: 64px;
+            column-gap: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 60px;
+  }
+}
 #about section .about-p {
   margin: 24px 0 40px;
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#about section ul {
+  gap: 40px;
+}
+#about section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+}
+#about section ul li img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
 }
 #about section ul li h2 {
   color: var(--nightBlue);
@@ -805,8 +932,29 @@ textarea {
   font-weight: 600;
   margin-bottom: 8px;
 }
+#about section ul li p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
 #about aside {
   margin-top: 68px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #about aside {
+    margin-top: 0;
+  }
+}
+#about aside img {
+  width: 100%;
+  max-width: 849px;
+  border-radius: 12px;
+}
+@media (min-width: 768px) {
+  #about aside img {
+    max-width: 645px;
+  }
 }
 
 /* =============

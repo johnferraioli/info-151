@@ -12,6 +12,23 @@ body {
     color: var(--nightBlue);
     font-size: helpers.rem-calc(50);
     line-height: helpers.rem-calc(65);
+
+    img {
+        display: none;
+    }
+
+    @include helpers.md {
+        span {
+            position: relative;
+    
+            img {
+                display: inline;
+                position: absolute;
+                top: 0;
+                left: 6px;
+            }
+        }
+    }
 }
 
 .body-grey-text {

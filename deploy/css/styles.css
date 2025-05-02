@@ -1222,3 +1222,47 @@ textarea {
     -ms-grid-column-span: 1;
   }
 }
+
+/* =============
+  Flexbox Demo
+============= */
+#flexbox {
+  background-color: #264653;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#flexbox #flex-child {
+  height: 200px;
+  width: 200px;
+  background-color: #2a9d8f;
+}
+#flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#flexbox ul li {
+  height: 200px;
+  width: 200px;
+  margin: 0 20px;
+}
+#flexbox ul #b1 {
+  background-color: #e9c46a;
+}
+#flexbox ul #b2 {
+  background-color: #f4a261;
+}
+#flexbox ul #b3 {
+  background-color: #e76f51;
+}
+#flexbox ul #b4 {
+  background-color: #2a9;
+}

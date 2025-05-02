@@ -3,37 +3,32 @@
 ============= */
 @use "../helpers";
 
-#communication {
-    background-color: var(--white);
-    text-align: center;
-    padding: 107px 24px;
-  
-    p {
-      color: var(--grey);
-      font-weight: 600;
-      line-height: 28px;
-      margin: 16px auto 48px;
-      max-width: 764px;
-    }
-  
-    img {
-      width: 100%;
-    //   max-width: 600px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-  
-      @include helpers.md {
-        max-width: 576px;
+#communication{
+  text-align: center;
+
+  #communication-content{
+      @include helpers.lg{
+          width: 992px;
+          margin: 0 auto;
       }
 
-      @include helpers.lg {
-        max-width: 768px;
-      }
+
+      p{
+          margin: 24px 0px 48px;
   
-      @include helpers.xl {
-        max-width: 992px;
+          @include helpers.md{
+              padding: 0 8vw;
+              margin-bottom: 24px;
+          }
       }
-    }
   }
+
+  #communication-img{
+      @include helpers.xl{
+          width: 1200px;
+          margin: 0 auto;
+      }
+  }
+
+}
   

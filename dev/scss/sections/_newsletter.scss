@@ -3,54 +3,52 @@
 ============= */
 @use "../helpers";
 
-#newsletter {
+#newsletter{
 
     margin-bottom: 100px;
 
-    #newsletter-content {
+    #newsletter-content{
         background-color: var(--lilyWhite);
         padding: 60px 16px;
-        border-radius: 8px;
 
-        @include helpers.md {
-            padding: 60px 15vw;
+        @include helpers.md{
+            padding: 60px 20vw;
         }
 
-        @include helpers.lg {
+        @include helpers.lg{
             display: grid;
-            grid-template-columns: 55% auto;
+            grid-template-columns: 60% auto;
             padding: 0px 0px;
             gap: 60px;
         }
 
-        @include helpers.xl {
+        @include helpers.xl{
             grid-template-columns: 65% auto;
             width: 1200px;
             margin: 0 auto;
         }
 
-        #newsletter-left {
+        #newsletter-left{
 
-            @include helpers.lg {
+            @include helpers.lg{
                 padding: 60px 0px 60px 60px;
             }
 
-            p {
+            p{
                 margin: 16px 0;
             }
-    
-            form {
-                border-radius: 8px;
+        
+            form{
 
-                @include helpers.md {
+                @include helpers.md{
                     display: flex;
                     padding: 12px 8px;
                     align-items: center;
                     background-color: var(--white);
-
+                    border-radius: 8px;
                 }
-    
-                input {
+        
+                input{
                     border: none;
                     color: var(--grey);
                     font-weight: 600;
@@ -60,42 +58,42 @@
                     border-radius: 8px;
                     margin-bottom: 16px;
 
-                    @include helpers.md {
+                    @include helpers.md{
                         margin-bottom: 0;
                     }
                 }
     
                 ::placeholder {
                     color: var(--grey);
-                    opacity: 1;
+                    opacity: 1; /* Firefox */
                 }
-    
-                ::-ms-input-placeholder {
+                
+                ::-ms-input-placeholder { /* Edge 12 -18 */
                     color: var(--grey);
                 }
     
-                div {
+                div{
                     text-align: right;
                 }
             }
         }
 
-        aside {
+
+
+        aside{
+            // week 4 code
             display: none;
 
-            @include helpers.lg {
+            @include helpers.lg{
                 display: block;
                 // border: 1px solid red;
                 margin-top: -50px;
             }
 
-            img {
+            img{
                 // margin-top: -120px;
                 // object-fit: cover;
             }
         }
     }
-
-    
 }
-  

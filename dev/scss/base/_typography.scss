@@ -13,20 +13,13 @@ body {
     font-size: helpers.rem-calc(50);
     line-height: helpers.rem-calc(65);
 
-    img {
-        display: none;
-    }
+    span{
+        position: relative;
 
-    @include helpers.md {
-        span {
-            position: relative;
-    
-            img {
-                display: inline;
-                position: absolute;
-                top: 0;
-                left: 6px;
-            }
+        img{
+            position: absolute;
+            top:0;
+            left: 6px;
         }
     }
 }

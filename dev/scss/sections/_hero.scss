@@ -72,6 +72,10 @@
                     width: 60px;
                     border-radius: 100%;
                     margin-left: 30px;
+
+                    &:hover {
+                        background-color: var(--nightBlue);
+                    }
                 }
             }
     

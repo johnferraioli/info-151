@@ -38,19 +38,28 @@
     
             button {
                 border: none;
+                padding: 13px 18px;
+                border-radius: 8px;
             }
     
             #left-arrow {
                 background-color: var(--white);
                 color: var(--grey);
-                padding: 13px 18px;
+
+                &:hover {
+                    background-color: var(--aqua);
+                    color: var(--grey);
+                }
             }
     
             #right-arrow {
                 background-color: var(--aqua);
                 color: var(--white);
-                padding: 13px 18px;
-                border-radius: 8px;
+
+                &:hover {
+                    background-color: var(--grey);
+                    color: var(--aqua);
+                }
             }
         }
     }
@@ -79,6 +88,12 @@
             margin-bottom: 48px;
             padding: 16px;
             border-radius: 14px;
+            transition: 0.25s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--white);
+            }
 
             .package-card-img {
                 width: 100%;
@@ -131,9 +146,9 @@
             }
         }
 
-        .selected {
-            background-color: var(--white);
-        }
+        // .selected {
+        //     background-color: var(--white);
+        // }
 
         #card-1 {
             @include helpers.md {

@@ -394,16 +394,14 @@ body {
 ============= */
 a {
   text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.nightBlue-link {
-  background-color: var(--nightBlue);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 22px 36px;
-  border-radius: 6px;
-  display: inline-block;
+button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
 }
 
 .nightBlue-btn {
@@ -414,6 +412,25 @@ a {
   padding: 22px 36px;
   border-radius: 6px;
   border: none;
+  display: inline-block;
+}
+.nightBlue-btn:hover {
+  background-color: var(--aqua);
+  color: var(--nightBlue);
+}
+
+.nightBlue-btn:link, .nightBlue-btn:visited {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  border: none;
+}
+.nightBlue-btn:link:hover, .nightBlue-btn:link:active, .nightBlue-btn:visited:hover, .nightBlue-btn:visited:active {
+  background-color: var(--aqua);
+  color: var(--nightBlue);
 }
 
 /* =============
@@ -500,6 +517,9 @@ textarea {
   width: 60px;
   border-radius: 100%;
   margin-left: 30px;
+}
+#hero #hero-content-container section article button:hover {
+  background-color: var(--nightBlue);
 }
 #hero #hero-content-container section #hero-card {
   background-color: var(--snowdrop);
@@ -602,17 +622,24 @@ textarea {
 }
 #packages #top-content #package-button-container button {
   border: none;
+  padding: 13px 18px;
+  border-radius: 8px;
 }
 #packages #top-content #package-button-container #left-arrow {
   background-color: var(--white);
   color: var(--grey);
-  padding: 13px 18px;
+}
+#packages #top-content #package-button-container #left-arrow:hover {
+  background-color: var(--aqua);
+  color: var(--grey);
 }
 #packages #top-content #package-button-container #right-arrow {
   background-color: var(--aqua);
   color: var(--white);
-  padding: 13px 18px;
-  border-radius: 8px;
+}
+#packages #top-content #package-button-container #right-arrow:hover {
+  background-color: var(--grey);
+  color: var(--aqua);
 }
 @media (min-width: 768px) {
   #packages #package-card-container {
@@ -639,6 +666,12 @@ textarea {
   margin-bottom: 48px;
   padding: 16px;
   border-radius: 14px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#packages #package-card-container .package-card:hover {
+  background-color: var(--white);
 }
 #packages #package-card-container .package-card .package-card-img {
   width: 100%;
@@ -690,9 +723,6 @@ textarea {
   font-size: 0.875rem;
   line-height: 1.75rem;
   margin-left: 20px;
-}
-#packages #package-card-container .selected {
-  background-color: var(--white);
 }
 @media (min-width: 768px) {
   #packages #package-card-container #card-1 {

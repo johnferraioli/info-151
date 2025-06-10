@@ -1,0 +1,70 @@
+/* =============
+    Resume
+============= */
+
+#resume {
+    padding: 80px 24px;
+    background-color: var(--background-main);
+
+    h1, p {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .resume-paper {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: var(--background-light);
+        padding: 40px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        line-height: 1.6;
+        color: var(--text-primary);
+
+        h1, p {
+        text-align: left;
+        }
+    }
+
+    h2 {
+        margin-top: 24px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 8px;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin-top: 24px;
+        font-weight: 500;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin: 0 auto;
+        max-width: 900px;
+
+        li {
+            margin-bottom: 6px;
+            color: var(--text-primary);
+            list-style-type: disc;
+
+            p {
+                margin: 0;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    a {
+        color: var(--accent);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--accent-hover);
+        }
+    }
+}

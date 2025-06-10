@@ -1,0 +1,65 @@
+/* =============
+     About
+============= */
+
+#about {
+    background-color: var(--background-main);
+    padding: 80px 24px;
+    color: var(--text-primary);
+
+    h1 {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    p {
+        max-width: 800px;
+        margin: 0 auto 32px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    ul {
+        max-width: 600px;
+        margin: 0 auto;
+        padding-left: 20px;
+        list-style-type: disc;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .github-button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .github-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: black;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+
+        .github-icon {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+            background-color: var(--text-secondary);
+        }
+    }
+
+}

@@ -1,0 +1,470 @@
+:root {
+  --text-primary: #222;
+  --text-secondary: #333;
+  --heading: #1a1a1a;
+  --accent: #0066cc;
+  --accent-hover: #004999;
+  --background-main: #FAF9F6;
+  --background-light: #FDFDFD;
+}
+
+/* =============
+    Normalize
+============= */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+/* =============
+    Base
+============= */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.img-scaler {
+  width: 100%;
+}
+
+.content-padding {
+  padding: 40px 24px;
+}
+
+/* =============
+    Typography
+============= */
+h1 {
+  font-size: 2rem;
+  color: var(--heading);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--heading);
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+ul li {
+  color: var(--text-primary);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: #fff;
+}
+
+/* =============
+     Home
+============= */
+#home {
+  background-color: var(--background-main);
+  padding: 80px 24px;
+}
+#home .home-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+#home .home-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 300px;
+}
+#home .home-text h1 {
+  margin-bottom: 16px;
+}
+#home .home-text h2 {
+  margin-top: 1px;
+  margin-bottom: 12px;
+}
+#home .home-text p {
+  max-width: 600px;
+}
+#home .home-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
+}
+#home .home-image img {
+  max-width: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =============
+     About
+============= */
+#about {
+  background-color: var(--background-main);
+  padding: 80px 24px;
+  color: var(--text-primary);
+}
+#about h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+#about p {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+#about h2 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+#about ul {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+#about ul li {
+  margin-bottom: 10px;
+}
+#about .github-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+#about .github-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background-color: black;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+#about .github-button .github-icon {
+  width: 30px;
+  height: 30px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+#about .github-button:hover {
+  background-color: var(--text-secondary);
+}
+
+/* =============
+    Resume
+============= */
+#resume {
+  padding: 80px 24px;
+  background-color: var(--background-main);
+}
+#resume h1, #resume p {
+  text-align: center;
+  margin-bottom: 6px;
+}
+#resume .resume-paper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background-light);
+  padding: 40px;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+#resume .resume-paper h1, #resume .resume-paper p {
+  text-align: left;
+}
+#resume h2 {
+  margin-top: 24px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+#resume h3 {
+  margin-top: 24px;
+  font-weight: 500;
+}
+#resume ul {
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+#resume ul li {
+  margin-bottom: 6px;
+  color: var(--text-primary);
+  list-style-type: disc;
+}
+#resume ul li p {
+  margin: 0;
+  line-height: 1.5;
+}
+#resume p {
+  margin-bottom: 12px;
+}
+#resume a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+#resume a:hover {
+  color: var(--accent-hover);
+}
+
+/* =============
+    Projects
+============= */
+#projects {
+  background-color: var(--background-main);
+  padding: 80px 24px;
+  color: var(--text-primary);
+}
+#projects h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#projects h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#projects p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+#projects ul {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: left;
+}
+#projects ul li p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+#projects strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+#projects .project-content p {
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+#projects .project-content li {
+  list-style-type: disc;
+}
+#projects .project-content li p {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+/* =============
+  Associations
+============= */
+#associations {
+  background-color: var(--background-main);
+  padding: 80px 24px;
+  color: var(--text-primary);
+}
+#associations h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+#associations p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+#associations .association {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+#associations .association h2 {
+  margin-bottom: 12px;
+}
+#associations .association p {
+  margin-bottom: 12px;
+  text-align: left;
+}
+#associations .association a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+#associations .association a:hover {
+  color: var(--accent-hover);
+}
+
+/* =============
+    Contact
+============= */
+#contact {
+  background-color: var(--background-main);
+  padding: 80px 24px;
+  color: var(--text-primary);
+  text-align: center;
+}
+#contact h1 {
+  margin-bottom: 24px;
+}
+#contact p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+#contact ul li {
+  margin-bottom: 12px;
+}
+#contact ul li a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+#contact .email-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+#contact .email-link:hover {
+  color: var(--accent-hover);
+}
+#contact .contact-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background-color: #0077b5;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+#contact .contact-button .icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+#contact .contact-button span {
+  display: inline-block;
+}
+#contact .contact-button:hover {
+  background-color: var(--accent-hover);
+}

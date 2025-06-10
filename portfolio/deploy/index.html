@@ -6,87 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>John Ferraioli | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head><body>
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>"Things get done only if the data we gather can inform and inspire those in a position to make a difference." - Dr. Mike Schmoker</p>
-
-        <h2>Purpose</h2>
-        <p>I believe in using data to drive meaningful impact, no matter the problem.</p>
-
-        <img src="img/jpf-portrait.png" alt="Photo of John Ferraioli">
+        <div class="home-wrapper">
+            <div class="home-text">
+                <h1>Hi, I'm John Ferraioli</h1>
+                <h2>Data Science Student at Drexel University</h2>
+                <p>I'm passionate about extracting insights from complex data and building intuitive solutions with impact.</p>
+            </div>
+            <div class="home-image">
+                <img src="img/jpf-portrait.png" alt="John Ferraioli">
+            </div>
+        </div>
     </section>
+
     
 <section id="about">
     <h1>About Me</h1>
     <p>Hi, I’m John Ferraioli. I am a graduate with a B.S. in Data Science and a minor in Mathematics from the Drexel University, and I'm looking for roles in the data industry. As a data scientist, I'm especially interested in projects that combine creativity with analytics to solve real-world problems.</p>
 
-    <h2>Personal Interests</h2>
-    <ul>
-    <li>Data Science</li>
-    <li>Baseball analytics</li>
-    <li>Sports and Fitness</li>
-    </ul>
-
-    <h2>Helpful Links</h2>
-    <ul>
-        <li><a href="https://github.com/johnferraioli" target="_blank">My GitHub Projects</a></li>
-    </ul>
+    <div class="github-button-wrapper">
+        <a class="github-button" href="https://github.com/johnferraioli" target="_blank">
+            <img src="img/github.svg" alt="GitHub Logo" class="github-icon" />
+            My GitHub Projects
+        </a>
+    </div>
 </section><section id="resume">
     <h1>Resume</h1>
 
     <p>You can <a href="resume/John Ferraioli Resume.pdf" target="_blank" download>download my full resume as a PDF</a> or view a summary below.</p>
 
-    <h2>Education</h2>
-    <p><strong>Bachelor of Science, Data Science</strong> - 3.78 GPA<br>
-    <em>Drexel University - Philadelphia, PA</em><br>
-    <em>Minor in Mathematics</em></p>
+    <div class="resume-paper">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science, Data Science</strong> - 3.78 GPA<br>
+        <em>Drexel University - Philadelphia, PA</em><br>
+        <em>Minor in Mathematics</em></p>
 
-    <h2>Professional Experience</h2>
+        <h2>Professional Experience</h2>
 
-    <h3>Application Engineer Intern - The Vanguard Group, Inc.</h3>
-    <p><em>Sep. 2023 - Mar. 2024</em></p>
-    <ul>
-        <li><p>Built core services for a brokerage order management application using Java and Spring Boot, including an order tagging engine and a web interface used internally to manage order routing rules.</p></li>
-        <li><p>Boosted reliability and test coverage by writing 50+ unit tests in JUnit, contributing to a 100% code coverage rate and reducing pre-release bugs.</p></li>
-        <li><p>Enabled business-side testing by implementing Cucumber BDD tests, allowing non-technical stakeholders to validate application behavior without developer involvement.</p></li>
-        <li><p>Validated functionality through endpoint testing with Postman and ensured smooth deployments using Bitbucket and Bamboo.</p></li>
-        <li><p>Improved observability and diagnostics by integrating OpenTelemetry with SplunkCloud and building Honeycomb dashboards, increasing developer efficiency and issue traceability.</p></li>
-    </ul>
+        <h3>Application Engineer Intern - The Vanguard Group, Inc.</h3>
+        <p><em>Sep. 2023 - Mar. 2024</em></p>
+        <ul>
+            <li><p>Built core services for a brokerage order management application using Java and Spring Boot, including an order tagging engine and a web interface used internally to manage order routing rules.</p></li>
+            <li><p>Boosted reliability and test coverage by writing 50+ unit tests in JUnit, contributing to a 100% code coverage rate and reducing pre-release bugs.</p></li>
+            <li><p>Enabled business-side testing by implementing Cucumber BDD tests, allowing non-technical stakeholders to validate application behavior without developer involvement.</p></li>
+            <li><p>Validated functionality through endpoint testing with Postman and ensured smooth deployments using Bitbucket and Bamboo.</p></li>
+            <li><p>Improved observability and diagnostics by integrating OpenTelemetry with SplunkCloud and building Honeycomb dashboards, increasing developer efficiency and issue traceability.</p></li>
+        </ul>
 
-    <h3>Data Management Intern - Brandywine Global Investment Management, LLC</h3>
-    <p><em>Sep. 2022 - Mar. 2023</em></p>
-    <ul>
-        <li><p>Achieved scalable data integration by building Dell Boomi pipelines to manage 100+ Snowflake schemas and tables.</p></li>
-        <li><p>Improved pipeline efficiency by automating job scheduling and execution using Workload Automation iXp, streamlining end-to-end data flow.</p></li>
-        <li><p>Ensured data integrity by performing Snowflake SQL quality checks, identifying and resolving issues such as duplicates and null values across key datasets.</p></li>
-        <li><p>Accelerated data analysis by optimizing complex SQL queries and stored procedures, transforming raw data into curated tables for downstream analytics teams.</p></li>
-    </ul>
+        <h3>Data Management Intern - Brandywine Global Investment Management, LLC</h3>
+        <p><em>Sep. 2022 - Mar. 2023</em></p>
+        <ul>
+            <li><p>Achieved scalable data integration by building Dell Boomi pipelines to manage 100+ Snowflake schemas and tables.</p></li>
+            <li><p>Improved pipeline efficiency by automating job scheduling and execution using Workload Automation iXp, streamlining end-to-end data flow.</p></li>
+            <li><p>Ensured data integrity by performing Snowflake SQL quality checks, identifying and resolving issues such as duplicates and null values across key datasets.</p></li>
+            <li><p>Accelerated data analysis by optimizing complex SQL queries and stored procedures, transforming raw data into curated tables for downstream analytics teams.</p></li>
+        </ul>
 
-    <h3>Data Analytics Intern - Imagine360</h3>
-    <p><em>Oct. 2021 - Apr. 2022</em></p>
-    <ul>
-        <li><p>Improved claim data quality using SQL Server Management Studio to clean and prep 60,000+ healthcare claims for analysis.</p></li>
-        <li><p>Streamlined daily operations by developing reusable R scripts to transform raw data into readable, structured datasets.</p></li>
-        <li><p>Enhanced pricing forecasts by applying a reference-based pricing model to estimate future costs for client healthcare plans.</p></li>
-    </ul>
+        <h3>Data Analytics Intern - Imagine360</h3>
+        <p><em>Oct. 2021 - Apr. 2022</em></p>
+        <ul>
+            <li><p>Improved claim data quality using SQL Server Management Studio to clean and prep 60,000+ healthcare claims for analysis.</p></li>
+            <li><p>Streamlined daily operations by developing reusable R scripts to transform raw data into readable, structured datasets.</p></li>
+            <li><p>Enhanced pricing forecasts by applying a reference-based pricing model to estimate future costs for client healthcare plans.</p></li>
+        </ul>
 
-    <h2>Projects</h2>
+        <h2>Projects</h2>
 
-    <h3>BenchQuest - Fitness Game App</h3>
-    <ul>
-        <li><p>Enabled cross-device gameplay by designing and implementing a cloud-based AWS DynamoDB database for a fitness app that translates workout progress into game rewards.</p></li>
-        <li><p>Achieved reliable data storage by building backend logic to persist user data, including profiles, fitness activity, and in-game progress (e.g., avatar levels, gold).</p></li>
-        <li><p>Improved development clarity and collaboration by creating detailed UML diagrams in Draw.io to outline the app’s database architecture.</p></li>
-    </ul>
+        <h3>BenchQuest - Fitness Game App</h3>
+        <ul>
+            <li><p>Enabled cross-device gameplay by designing and implementing a cloud-based AWS DynamoDB database for a fitness app that translates workout progress into game rewards.</p></li>
+            <li><p>Achieved reliable data storage by building backend logic to persist user data, including profiles, fitness activity, and in-game progress (e.g., avatar levels, gold).</p></li>
+            <li><p>Improved development clarity and collaboration by creating detailed UML diagrams in Draw.io to outline the app’s database architecture.</p></li>
+        </ul>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><p><strong>Languages & Frameworks:</strong> Python (NumPy, Pandas, Scikit-learn), R (Tidyverse), SQL, Java (Spring Boot)</p></li>
-        <li><p><strong>Data Engineering:</strong> Snowflake, BigQuery, DynamoDB, PostgreSQL, MSSQL</p></li>
-        <li><p><strong>Cloud Platforms:</strong> AWS (S3, EC2, Lambda), Google Cloud, Dell Boomi</p></li>
-        <li><p><strong>Tools & BI:</strong> Jupyter, Colab, Matplotlib, Seaborn, ggplot2, GitHub, Perforce</p></li>
-    </ul>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><p><strong>Languages & Frameworks:</strong> Python (NumPy, Pandas, Scikit-learn), R (Tidyverse), SQL, Java (Spring Boot)</p></li>
+            <li><p><strong>Data Engineering:</strong> Snowflake, BigQuery, DynamoDB, PostgreSQL, MSSQL</p></li>
+            <li><p><strong>Cloud Platforms:</strong> AWS (S3, EC2, Lambda), Google Cloud, Dell Boomi</p></li>
+            <li><p><strong>Tools & BI:</strong> Jupyter, Colab, Matplotlib, Seaborn, ggplot2, GitHub, Perforce</p></li>
+        </ul>
+    </div>
+    
 </section>
 <section id="projects">
     <h1>Projects</h1>
@@ -103,13 +109,16 @@
     </ul>
 
     <h2>Fantasy Baseball Draft Helper (In Progress)</h2>
-    <p>This Python-based tool helps fantasy baseball players make more informed draft decisions using historical stats and machine learning models.</p>
-    <ul>
-        <li><p>Scrapes player statistics from FanGraphs and Baseball Savant.</p></li>
-        <li><p>Ranks players by projected value across scoring categories using weighted calculations.</p></li>
-        <li><p>Includes position scarcity logic and dynamic ranking updates as the draft progresses.</p></li>
-        <li><p><strong>Technologies:</strong> Python, Pandas, Scikit-learn, BeautifulSoup.</p></li>
-    </ul>
+    <div class="project-content">
+        <p>This Python-based tool helps fantasy baseball players make more informed draft decisions using historical stats and machine learning models.</p>
+        <ul>
+            <li><p>Scrapes player statistics from FanGraphs and Baseball Savant.</p></li>
+            <li><p>Ranks players by projected value across scoring categories using weighted calculations.</p></li>
+            <li><p>Includes position scarcity logic and dynamic ranking updates as the draft progresses.</p></li>
+            <li><p><strong>Technologies:</strong> Python, Pandas, Scikit-learn, BeautifulSoup.</p></li>
+        </ul>
+    </div>
+
 </section>
 <section id="associations">
     <h1>Professional Associations</h1>
@@ -144,8 +153,14 @@
     <p>If you'd like to connect, feel free to reach out through the links below.</p>
 
     <ul>
-        <li><p>Email: <a href="mailto:ferraiolijohn@gmail.com">ferraiolijohn@gmail.com</a></p></li>
-        <li><p>LinkedIn: <a href="https://www.linkedin.com/in/john-ferraioli/" target="_blank">linkedin.com/in/john-ferraioli</a></p></li>
+        <li><p>Email: <a class="email-link" href="mailto:ferraiolijohn@gmail.com">ferraiolijohn@gmail.com</a></p></li>
+        <li>
+            <a class="contact-button" href="https://www.linkedin.com/in/john-ferraioli/" target="_blank">
+                <img src="img/linkedin.svg" alt="LinkedIn Logo" class="icon">
+                <span>My LinkedIn</span>
+            </a>
+        </li>
+
     </ul>
 
     <p>Based in: Philadelphia, PA / New York, NY</p>

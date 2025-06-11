@@ -3,13 +3,22 @@
 ============= */
 
 #home {
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 40px 24px 0px;
     background-color: var(--background-main);
     text-align: center;
+
+    .portfolio-tagline {
+        font-size: 1.125rem;
+        font-style: italic;
+        color: var(--text-secondary);
+        margin-top: -12px;
+        margin-bottom: 24px;
+    }
+
 
     .home-wrapper {
         display: flex;

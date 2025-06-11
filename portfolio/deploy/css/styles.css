@@ -132,7 +132,6 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: #fff;
   background-color: var(--background-main);
 }
 
@@ -140,7 +139,7 @@ body {
      Home
 ============= */
 #home {
-  min-height: 80vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +153,13 @@ body {
   padding: 40px 24px 0px;
   background-color: var(--background-main);
   text-align: center;
+}
+#home .portfolio-tagline {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-top: -12px;
+  margin-bottom: 24px;
 }
 #home .home-wrapper {
   display: -webkit-box;

@@ -1,0 +1,75 @@
+/* =============
+     Header
+============= */
+
+#menu-button {
+    display: block;
+    font-size: 2rem;
+    padding: 16px 24px;
+
+    i {
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+}
+
+#close-bar-btn {
+    display: block;
+    font-size: 2rem;
+    padding: 16px 24px;
+
+    i {
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+}
+
+.menu {
+    display: none;
+    margin-top: 24px;
+    text-align: center;
+    background-color: var(--background-main);
+
+    a {
+        color: var(--text-primary);
+        display: inline-block;
+        transition: 
+            color 0.2s,
+            transform 0.2s;
+    }
+}
+
+.menu a:hover {
+    color: var(--text-secondary);
+    transform: scale(1.15);
+}
+
+.menu--open {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: block !important;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    #menu-button,
+    #close-bar-btn {
+        display: none !important;
+    }
+}
+

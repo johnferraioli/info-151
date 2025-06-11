@@ -95,6 +95,10 @@ ul li {
   padding: 40px 24px;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 /* =============
     Typography
 ============= */
@@ -135,6 +139,78 @@ body {
   background-color: var(--background-main);
 }
 
+/* =============
+     Header
+============= */
+#menu-button {
+  display: block;
+  font-size: 2rem;
+  padding: 16px 24px;
+}
+#menu-button i {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+#close-bar-btn {
+  display: block;
+  font-size: 2rem;
+  padding: 16px 24px;
+}
+#close-bar-btn i {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.menu {
+  display: none;
+  margin-top: 24px;
+  text-align: center;
+  background-color: var(--background-main);
+}
+.menu a {
+  color: var(--text-primary);
+  display: inline-block;
+  -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.2s, transform 0.2s;
+  transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.menu a:hover {
+  color: var(--text-secondary);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.menu--open {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+  .menu {
+    display: block !important;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+  .menu li {
+    margin: 0;
+  }
+  #menu-button,
+  #close-bar-btn {
+    display: none !important;
+  }
+}
 /* =============
      Home
 ============= */

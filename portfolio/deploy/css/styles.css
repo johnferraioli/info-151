@@ -272,6 +272,10 @@ body {
 }
 #about .github-button:hover {
   background-color: var(--text-secondary);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 /* =============
@@ -497,7 +501,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  background-color: #0077b5;
+  background-color: #0274b3;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
@@ -506,14 +510,18 @@ body {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-#contact .contact-button .icon {
-  width: 20px;
-  height: 20px;
+#contact .contact-button .icon.gif-icon {
+  width: 60px;
+  height: 60px;
+  margin: -15px;
   display: block;
 }
 #contact .contact-button span {
   display: inline-block;
 }
 #contact .contact-button:hover {
-  background-color: var(--accent-hover);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
+          box-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
 }

@@ -3,8 +3,13 @@
 ============= */
 
 #home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 24px 0px;
     background-color: var(--background-main);
-    padding: 80px 24px;
+    text-align: center;
 
     .home-wrapper {
         display: flex;
@@ -22,16 +27,19 @@
         min-width: 300px;
 
         h1 {
+            font-size: 2.5rem;
             margin-bottom: 16px;
         }
 
         h2 {
-            margin-top: 1px;
+            font-size: 1.75rem;
             margin-bottom: 12px;
         }
 
         p {
-            max-width: 600px;
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto 24px;
         }
     }
 
